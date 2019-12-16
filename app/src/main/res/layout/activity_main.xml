@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#49122F"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Samuel Rus Sparenga"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                app:fontFamily="serif" />
+
+            <LinearLayout
+                android:id="@+id/images"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:layout_gravity="center"
+                android:background="#f2f4f3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/lasVegas"
+                    android:layout_width="94dp"
+                    android:layout_height="197dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="14px"
+                    tools:srcCompat="@drawable/img_20190706_204020476_hdr" />
+
+                <ImageView
+                    android:id="@+id/modelUN"
+                    android:layout_width="21dp"
+                    android:layout_height="152dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/mun" />
+
+                <ImageView
+                    android:id="@+id/civV"
+                    android:layout_width="20dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/civ_v" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bios"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#a9927d"
+                android:orientation="horizontal"
+                android:textSize="20px">
+
+                <TextView
+                    android:id="@+id/basicFacts"
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:text="Birthday: May 25, 2003 \n Age: 16 \n Grade: Junior"
+                    android:textAlignment="gravity" />
+
+                <TextView
+                    android:id="@+id/basicBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="I was born in Los Angles, and came to Moreno Valley by 2013. I have taken 5 AP courses as of 2019 am taking 5 more." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/trivia"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/toastButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="What club am I President of?" />
+
+                <Button
+                    android:id="@+id/logCatButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="What clubs am I a member of?" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/colleges"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:background="#5e503f"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/collegesIWant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Colleges I want to go to \n1) Carnegie Mellon University\n2) Massachusetts Institute of Technology\n3) University of California - Berkeley\n4) Princeton University\n5) University of Southern California"
+                    app:fontFamily="monospace" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/cmu"
+                        android:layout_width="201dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/cmu" />
+
+                    <ImageView
+                        android:id="@+id/princeton"
+                        android:layout_width="115dp"
+                        android:layout_height="116dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/princeton" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
